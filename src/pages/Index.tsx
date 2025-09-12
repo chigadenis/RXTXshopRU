@@ -55,8 +55,8 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary via-secondary to-primary/80 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-br from-primary via-secondary to-primary/80 text-white py-20 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl font-bold mb-6">Радиоэлектроника </h1>
             <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">Тщательно отобранные товары, прямыми поставками из Китая</p>
@@ -64,6 +64,61 @@ const Index = () => {
               Посмотреть каталог
               <Icon name="ArrowRight" size={20} className="ml-2" />
             </Button>
+          </div>
+        </div>
+        
+        {/* Radio Towers Background Graphics */}
+        <div className="absolute inset-0 opacity-10">
+          {/* Left Tower */}
+          <div className="absolute left-10 top-1/2 transform -translate-y-1/2">
+            <svg width="60" height="120" viewBox="0 0 60 120" fill="currentColor" className="text-white">
+              {/* Tower Base */}
+              <rect x="25" y="80" width="10" height="40" />
+              {/* Tower Body */}
+              <rect x="27" y="20" width="6" height="60" />
+              {/* Antenna Elements */}
+              <rect x="20" y="25" width="20" height="2" />
+              <rect x="22" y="35" width="16" height="2" />
+              <rect x="24" y="45" width="12" height="2" />
+              {/* Tower Top */}
+              <rect x="28" y="10" width="4" height="15" />
+              <circle cx="30" cy="8" r="3" />
+            </svg>
+          </div>
+          
+          {/* Right Tower */}
+          <div className="absolute right-10 top-1/2 transform -translate-y-1/2">
+            <svg width="60" height="120" viewBox="0 0 60 120" fill="currentColor" className="text-white">
+              {/* Tower Base */}
+              <rect x="25" y="80" width="10" height="40" />
+              {/* Tower Body */}
+              <rect x="27" y="20" width="6" height="60" />
+              {/* Antenna Elements */}
+              <rect x="20" y="25" width="20" height="2" />
+              <rect x="22" y="35" width="16" height="2" />
+              <rect x="24" y="45" width="12" height="2" />
+              {/* Tower Top */}
+              <rect x="28" y="10" width="4" height="15" />
+              <circle cx="30" cy="8" r="3" />
+            </svg>
+          </div>
+          
+          {/* Signal Waves */}
+          <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <svg width="200" height="80" viewBox="0 0 200 80" fill="none" className="text-white animate-pulse">
+              {/* Signal waves from left */}
+              <path d="M20 40 Q60 20, 100 40" stroke="currentColor" strokeWidth="2" opacity="0.6" />
+              <path d="M30 40 Q65 25, 100 40" stroke="currentColor" strokeWidth="2" opacity="0.4" />
+              <path d="M40 40 Q70 30, 100 40" stroke="currentColor" strokeWidth="2" opacity="0.8" />
+              
+              {/* Signal waves to right */}
+              <path d="M100 40 Q140 20, 180 40" stroke="currentColor" strokeWidth="2" opacity="0.6" />
+              <path d="M100 40 Q135 25, 170 40" stroke="currentColor" strokeWidth="2" opacity="0.4" />
+              <path d="M100 40 Q130 30, 160 40" stroke="currentColor" strokeWidth="2" opacity="0.8" />
+              
+              {/* Central connection point */}
+              <circle cx="100" cy="40" r="4" fill="currentColor" opacity="0.8" />
+            </svg>
           </div>
         </div>
       </section>
