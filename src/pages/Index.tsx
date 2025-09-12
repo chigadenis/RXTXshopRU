@@ -35,7 +35,7 @@ const Index = () => {
           <div className="flex justify-between items-center py-6">
             <div className="flex items-center space-x-2">
               <Icon name="Smartphone" className="text-primary" size={32} />
-              <h1 className="text-2xl font-bold text-gray-900">TechStore</h1>
+              <h1 className="text-2xl font-bold text-gray-900">RXTXshop</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a href="#" className="text-primary font-medium border-b-2 border-primary pb-1">Главная</a>
