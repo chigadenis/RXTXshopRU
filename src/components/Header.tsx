@@ -13,7 +13,11 @@ const Header = ({ currentTab, setCurrentTab, totalItems }: HeaderProps) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
           <div className="flex items-center space-x-2">
-            <Icon name="Smartphone" className="text-primary" size={32} />
+            <img 
+              src="https://cdn.poehali.dev/files/5e4ca52d-3576-405f-a172-29a864b635b1.png" 
+              alt="RXTX Logo" 
+              className="h-8 w-auto"
+            />
             <h1 className="text-2xl font-bold text-gray-900">RXTXshop</h1>
           </div>
           <nav className="hidden md:flex space-x-8">
