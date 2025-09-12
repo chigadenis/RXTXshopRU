@@ -40,12 +40,6 @@ const Header = ({ currentTab, setCurrentTab, totalItems }: HeaderProps) => {
             >
               Корзина
             </button>
-            <a
-              href="#"
-              className="text-gray-700 hover:text-primary transition-colors"
-            >
-              Контакты
-            </a>
           </nav>
           <div className="flex items-center space-x-4">
             <Button variant="outline" size="sm">

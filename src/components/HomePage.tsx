@@ -264,6 +264,9 @@ const HomePage = ({ products, addToCart }: HomePageProps) => {
                   <Icon name="MapPin" size={16} className="mr-2" />
                   <span>Москва, ул. Тверская, 1</span>
                 </div>
+                <div className="mt-4 pt-3 border-t border-gray-700">
+                  <span className="text-sm">ИНН: 272100036607</span>
+                </div>
               </div>
             </div>
             <div>
