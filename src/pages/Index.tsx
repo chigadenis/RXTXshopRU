@@ -7,8 +7,9 @@ const Index = () => {
     {
       id: 1,
       name: "Шифратор сигнала аналоговый",
-      price: "8 990 ₽",
-      image: "https://cdn.poehali.dev/files/906784c9-3f67-46a2-bfab-14cf7c7c8c4d.jpg",
+      price: "19.990 ₽",
+      image:
+        "https://cdn.poehali.dev/files/906784c9-3f67-46a2-bfab-14cf7c7c8c4d.jpg",
       specs: [
         "Маскирование видео",
         "Отсутствие задержки",
@@ -32,8 +33,9 @@ const Index = () => {
     {
       id: 3,
       name: "Дешифратор сигнала аналоговый",
-      price: "3 990 ₽",
-      image: "https://cdn.poehali.dev/files/7077915b-b895-4c4a-9fdd-470f169e6a88.jpg",
+      price: "24.990 ₽",
+      image:
+        "https://cdn.poehali.dev/files/7077915b-b895-4c4a-9fdd-470f169e6a88.jpg",
       specs: ["100.000 вариантов кода", "Стандарт видео PAL", "TTL, CVBS"],
     },
   ];
