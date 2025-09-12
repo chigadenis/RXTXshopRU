@@ -8,23 +8,36 @@ const Index = () => {
       id: 1,
       name: "RushFPV VTX 1.3 / 3.3 GHz",
       price: "8 990 ₽",
-      image: "https://cdn.poehali.dev/files/afa14300-dfb0-467c-91e8-2d4353380535.jpg",
-      specs: ["1.3 / 3.3 GHz", "2W мощность", "SmartAudio", "Активное охлаждение"]
+      image:
+        "https://cdn.poehali.dev/files/afa14300-dfb0-467c-91e8-2d4353380535.jpg",
+      specs: [
+        "1.3 / 3.3 GHz",
+        "2.5 W мощность",
+        "SmartAudio",
+        "Активное охлаждение",
+      ],
     },
     {
-      id: 2, 
+      id: 2,
       name: "Усилитель 25 Ватт 130-170 МГц",
       price: "12 990 ₽",
-      image: "https://cdn.poehali.dev/files/aea531a6-8d8a-4a24-b0ca-73e161c2e71c.png",
-      specs: ["25W мощность", "130-170 МГц", "Активное охлаждение", "SMA разъёмы"]
+      image:
+        "https://cdn.poehali.dev/files/aea531a6-8d8a-4a24-b0ca-73e161c2e71c.png",
+      specs: [
+        "25W мощность",
+        "130-170 МГц",
+        "Активное охлаждение",
+        "SMA разъёмы",
+      ],
     },
     {
       id: 3,
       name: "Приемник GEPRC GeminiDual 2.4GHz / 915 MHz",
-      price: "3 990 ₽", 
-      image: "https://cdn.poehali.dev/files/e6213842-3846-4235-b43c-f26e62d652e1.jpg",
-      specs: ["2.4GHz / 915MHz", "ExpressLRS", "Dual Band", "20x20 размер"]
-    }
+      price: "3 990 ₽",
+      image:
+        "https://cdn.poehali.dev/files/e6213842-3846-4235-b43c-f26e62d652e1.jpg",
+      specs: ["2.4GHz / 915MHz", "ExpressLRS", "Dual Band", "20x20 размер"],
+    },
   ];
 
   return (
@@ -38,9 +51,24 @@ const Index = () => {
               <h1 className="text-2xl font-bold text-gray-900">RXTXshop</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-primary font-medium border-b-2 border-primary pb-1">Главная</a>
-              <a href="#" className="text-gray-700 hover:text-primary transition-colors">Товары</a>
-              <a href="#" className="text-gray-700 hover:text-primary transition-colors">Контакты</a>
+              <a
+                href="#"
+                className="text-primary font-medium border-b-2 border-primary pb-1"
+              >
+                Главная
+              </a>
+              <a
+                href="#"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                Товары
+              </a>
+              <a
+                href="#"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                Контакты
+              </a>
             </nav>
             <div className="flex items-center space-x-4">
               <Button variant="outline" size="sm">
@@ -59,19 +87,31 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl font-bold mb-6">Радиоэлектроника </h1>
-            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">Тщательно отобранные товары, прямыми поставками из Китая</p>
-            <Button size="lg" variant="secondary" className="text-primary font-semibold">
+            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
+              Тщательно отобранные товары, прямыми поставками из Китая
+            </p>
+            <Button
+              size="lg"
+              variant="secondary"
+              className="text-primary font-semibold"
+            >
               Посмотреть каталог
               <Icon name="ArrowRight" size={20} className="ml-2" />
             </Button>
           </div>
         </div>
-        
+
         {/* Radio Towers Background Graphics */}
         <div className="absolute inset-0 opacity-10">
           {/* Left Tower */}
           <div className="absolute left-10 top-1/2 transform -translate-y-1/2">
-            <svg width="60" height="120" viewBox="0 0 60 120" fill="currentColor" className="text-white">
+            <svg
+              width="60"
+              height="120"
+              viewBox="0 0 60 120"
+              fill="currentColor"
+              className="text-white"
+            >
               {/* Tower Base */}
               <rect x="25" y="80" width="10" height="40" />
               {/* Tower Body */}
@@ -85,10 +125,16 @@ const Index = () => {
               <circle cx="30" cy="8" r="3" />
             </svg>
           </div>
-          
+
           {/* Right Tower */}
           <div className="absolute right-10 top-1/2 transform -translate-y-1/2">
-            <svg width="60" height="120" viewBox="0 0 60 120" fill="currentColor" className="text-white">
+            <svg
+              width="60"
+              height="120"
+              viewBox="0 0 60 120"
+              fill="currentColor"
+              className="text-white"
+            >
               {/* Tower Base */}
               <rect x="25" y="80" width="10" height="40" />
               {/* Tower Body */}
@@ -102,22 +148,64 @@ const Index = () => {
               <circle cx="30" cy="8" r="3" />
             </svg>
           </div>
-          
+
           {/* Signal Waves */}
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <svg width="200" height="80" viewBox="0 0 200 80" fill="none" className="text-white animate-pulse">
+            <svg
+              width="200"
+              height="80"
+              viewBox="0 0 200 80"
+              fill="none"
+              className="text-white animate-pulse"
+            >
               {/* Signal waves from left */}
-              <path d="M20 40 Q60 20, 100 40" stroke="currentColor" strokeWidth="2" opacity="0.6" />
-              <path d="M30 40 Q65 25, 100 40" stroke="currentColor" strokeWidth="2" opacity="0.4" />
-              <path d="M40 40 Q70 30, 100 40" stroke="currentColor" strokeWidth="2" opacity="0.8" />
-              
+              <path
+                d="M20 40 Q60 20, 100 40"
+                stroke="currentColor"
+                strokeWidth="2"
+                opacity="0.6"
+              />
+              <path
+                d="M30 40 Q65 25, 100 40"
+                stroke="currentColor"
+                strokeWidth="2"
+                opacity="0.4"
+              />
+              <path
+                d="M40 40 Q70 30, 100 40"
+                stroke="currentColor"
+                strokeWidth="2"
+                opacity="0.8"
+              />
+
               {/* Signal waves to right */}
-              <path d="M100 40 Q140 20, 180 40" stroke="currentColor" strokeWidth="2" opacity="0.6" />
-              <path d="M100 40 Q135 25, 170 40" stroke="currentColor" strokeWidth="2" opacity="0.4" />
-              <path d="M100 40 Q130 30, 160 40" stroke="currentColor" strokeWidth="2" opacity="0.8" />
-              
+              <path
+                d="M100 40 Q140 20, 180 40"
+                stroke="currentColor"
+                strokeWidth="2"
+                opacity="0.6"
+              />
+              <path
+                d="M100 40 Q135 25, 170 40"
+                stroke="currentColor"
+                strokeWidth="2"
+                opacity="0.4"
+              />
+              <path
+                d="M100 40 Q130 30, 160 40"
+                stroke="currentColor"
+                strokeWidth="2"
+                opacity="0.8"
+              />
+
               {/* Central connection point */}
-              <circle cx="100" cy="40" r="4" fill="currentColor" opacity="0.8" />
+              <circle
+                cx="100"
+                cy="40"
+                r="4"
+                fill="currentColor"
+                opacity="0.8"
+              />
             </svg>
           </div>
         </div>
@@ -127,34 +215,51 @@ const Index = () => {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Список товаров</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Список товаров
+            </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Тщательно отобранные устройства с лучшими характеристиками и отзывами
+              Тщательно отобранные устройства с лучшими характеристиками и
+              отзывами
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product, index) => (
-              <Card key={product.id} className="hover:shadow-xl transition-all duration-300 animate-scale-in hover:scale-105 bg-white border-0 shadow-md" style={{animationDelay: `${index * 0.1}s`}}>
+              <Card
+                key={product.id}
+                className="hover:shadow-xl transition-all duration-300 animate-scale-in hover:scale-105 bg-white border-0 shadow-md"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
                 <CardContent className="p-6">
                   <div className="aspect-square bg-gray-100 rounded-lg mb-4 overflow-hidden">
-                    <img 
-                      src={product.image} 
+                    <img
+                      src={product.image}
                       alt={product.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">{product.name}</h3>
-                  <div className="text-2xl font-bold text-primary mb-4">{product.price}</div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {product.name}
+                  </h3>
+                  <div className="text-2xl font-bold text-primary mb-4">
+                    {product.price}
+                  </div>
                   <div className="space-y-2 mb-6">
                     {product.specs.map((spec, specIndex) => (
-                      <div key={specIndex} className="flex items-center text-gray-600 text-sm">
-                        <Icon name="Check" size={16} className="text-primary mr-2 flex-shrink-0" />
+                      <div
+                        key={specIndex}
+                        className="flex items-center text-gray-600 text-sm"
+                      >
+                        <Icon
+                          name="Check"
+                          size={16}
+                          className="text-primary mr-2 flex-shrink-0"
+                        />
                         {spec}
                       </div>
                     ))}
                   </div>
-
                 </CardContent>
               </Card>
             ))}
@@ -171,14 +276,18 @@ const Index = () => {
                 <Icon name="Truck" size={24} className="text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Быстрая доставка</h3>
-              <p className="text-gray-600">Доставляем по Москве в день заказа, по России — за 1-3 дня</p>
+              <p className="text-gray-600">
+                Доставляем по Москве в день заказа, по России — за 1-3 дня
+              </p>
             </div>
             <div className="text-center">
               <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Headphones" size={24} className="text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Поддержка 24/7</h3>
-              <p className="text-gray-600">Консультации по выбору и техподдержка в любое время</p>
+              <p className="text-gray-600">
+                Консультации по выбору и техподдержка в любое время
+              </p>
             </div>
           </div>
         </div>
@@ -193,7 +302,9 @@ const Index = () => {
                 <Icon name="Smartphone" size={28} className="text-primary" />
                 <h3 className="text-xl font-bold px-0">RXTXshop</h3>
               </div>
-              <p className="text-gray-400 mb-4">Поставщик радиоэлектроники с 2012 года</p>
+              <p className="text-gray-400 mb-4">
+                Поставщик радиоэлектроники с 2012 года
+              </p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
