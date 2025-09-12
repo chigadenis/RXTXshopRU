@@ -154,10 +154,7 @@ const Index = () => {
                       </div>
                     ))}
                   </div>
-                  <Button className="w-full">
-                    В корзину
-                    <Icon name="ShoppingCart" size={16} className="ml-2" />
-                  </Button>
+
                 </CardContent>
               </Card>
             ))}
