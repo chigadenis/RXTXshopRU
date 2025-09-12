@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
 
 interface HeaderProps {
-  currentTab: 'home' | 'cart';
-  setCurrentTab: (tab: 'home' | 'cart') => void;
+  currentTab: "home" | "cart";
+  setCurrentTab: (tab: "home" | "cart") => void;
   totalItems: number;
 }
 
@@ -13,30 +13,30 @@ const Header = ({ currentTab, setCurrentTab, totalItems }: HeaderProps) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-6">
           <div className="flex items-center space-x-2">
-            <img 
-              src="https://cdn.poehali.dev/files/5e4ca52d-3576-405f-a172-29a864b635b1.png" 
-              alt="RXTX Logo" 
+            <img
+              src="https://cdn.poehali.dev/files/5e4ca52d-3576-405f-a172-29a864b635b1.png"
+              alt="RXTX Logo"
               className="h-8 w-auto"
             />
-            <h1 className="text-2xl font-bold text-gray-900">RXTXshop</h1>
+            <h1 className="text-2xl font-bold text-gray-900"> shop </h1>
           </div>
           <nav className="hidden md:flex space-x-8">
             <button
-              onClick={() => setCurrentTab('home')}
+              onClick={() => setCurrentTab("home")}
               className={`font-medium pb-1 transition-colors ${
-                currentTab === 'home'
-                  ? 'text-primary border-b-2 border-primary'
-                  : 'text-gray-700 hover:text-primary'
+                currentTab === "home"
+                  ? "text-primary border-b-2 border-primary"
+                  : "text-gray-700 hover:text-primary"
               }`}
             >
               Главная
             </button>
             <button
-              onClick={() => setCurrentTab('cart')}
+              onClick={() => setCurrentTab("cart")}
               className={`font-medium pb-1 transition-colors ${
-                currentTab === 'cart'
-                  ? 'text-primary border-b-2 border-primary'
-                  : 'text-gray-700 hover:text-primary'
+                currentTab === "cart"
+                  ? "text-primary border-b-2 border-primary"
+                  : "text-gray-700 hover:text-primary"
               }`}
             >
               Корзина
@@ -52,10 +52,10 @@ const Header = ({ currentTab, setCurrentTab, totalItems }: HeaderProps) => {
             <Button variant="outline" size="sm">
               <Icon name="Search" size={16} />
             </Button>
-            <Button 
-              variant="outline" 
+            <Button
+              variant="outline"
               size="sm"
-              onClick={() => setCurrentTab('cart')}
+              onClick={() => setCurrentTab("cart")}
               className="relative"
             >
               <Icon name="ShoppingCart" size={16} />
