@@ -15,7 +15,7 @@ const Index = () => {
       id: 2, 
       name: "Усилитель 25 Ватт 130-170 МГц",
       price: "12 990 ₽",
-      image: "/img/6e93eaf3-1cbd-4eaa-98d9-113884c4acce.jpg",
+      image: "https://cdn.poehali.dev/files/aea531a6-8d8a-4a24-b0ca-73e161c2e71c.png",
       specs: ["25W мощность", "130-170 МГц", "Активное охлаждение", "SMA разъёмы"]
     },
     {
