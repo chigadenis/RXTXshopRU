@@ -6,10 +6,10 @@ const Index = () => {
   const products = [
     {
       id: 1,
-      name: "iPhone 15 Pro",
-      price: "99 990 ₽",
-      image: "/img/4dca5d91-3fe4-4c59-8def-39e768cc9596.jpg",
-      specs: ["6.1\" дисплей", "128 ГБ", "A17 Pro", "48 МП камера"]
+      name: "RushFPV VTX 1.3 / 3.3 GHz",
+      price: "8 990 ₽",
+      image: "https://cdn.poehali.dev/files/afa14300-dfb0-467c-91e8-2d4353380535.jpg",
+      specs: ["1.3 / 3.3 GHz", "2W мощность", "SmartAudio", "Активное охлаждение"]
     },
     {
       id: 2, 
