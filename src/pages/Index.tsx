@@ -6,15 +6,14 @@ const Index = () => {
   const products = [
     {
       id: 1,
-      name: "RushFPV VTX 1.3 / 3.3 GHz",
+      name: "Шифратор сигнала аналоговый",
       price: "8 990 ₽",
-      image:
-        "https://cdn.poehali.dev/files/afa14300-dfb0-467c-91e8-2d4353380535.jpg",
+      image: "https://cdn.poehali.dev/files/906784c9-3f67-46a2-bfab-14cf7c7c8c4d.jpg",
       specs: [
-        "1.3 / 3.3 GHz",
-        "2.5 W мощность",
-        "SmartAudio",
-        "Активное охлаждение",
+        "Маскирование видео",
+        "Отсутствие задержки",
+        "Удаленное включение/отключение кодирования",
+        "Адаптивная коррекция качества видеосигнала",
       ],
     },
     {
