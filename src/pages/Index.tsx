@@ -59,9 +59,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <h1 className="text-5xl font-bold mb-6">Электроника и гаджеты</h1>
-            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-              Лучшие технологии по выгодным ценам. Смартфоны, ноутбуки, аксессуары с доставкой по всей России
-            </p>
+            <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">Лучшая радиоэлектроника прямыми поставками из Китая</p>
             <Button size="lg" variant="secondary" className="text-primary font-semibold">
               Посмотреть каталог
               <Icon name="ArrowRight" size={20} className="ml-2" />
