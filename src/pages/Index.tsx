@@ -60,6 +60,19 @@ const Index = () => {
         "https://cdn.poehali.dev/files/7077915b-b895-4c4a-9fdd-470f169e6a88.jpg",
       specs: ["100.000 вариантов кода", "Стандарт видео PAL", "TTL, CVBS"],
     },
+    {
+      id: 4,
+      name: "Falcon Eyes FEL-3900ST тренога телескопическая",
+      price: "8.990 ₽",
+      image:
+        "https://cdn.poehali.dev/files/eca0499e-077d-48d2-be19-44fa8b65a483.png",
+      specs: [
+        "Минимальная высота 1350 мм",
+        "Максимальная высота 4000 мм",
+        "Максимальная нагрузка 12 кг",
+        "Вес без упаковки 5600 г"
+      ],
+    },
   ];
 
   const addToCart = (product: Product) => {
