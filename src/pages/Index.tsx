@@ -20,10 +20,10 @@ const Index = () => {
     },
     {
       id: 3,
-      name: "AirPods Pro 2",
-      price: "24 990 ₽", 
-      image: "/img/9782eaa2-b3b8-4c28-b77c-46ae73af56ab.jpg",
-      specs: ["ANC", "6ч + 24ч", "USB-C", "MagSafe"]
+      name: "Приемник GEPRC GeminiDual 2.4GHz / 915 MHz",
+      price: "3 990 ₽", 
+      image: "https://cdn.poehali.dev/files/e6213842-3846-4235-b43c-f26e62d652e1.jpg",
+      specs: ["2.4GHz / 915MHz", "ExpressLRS", "Dual Band", "20x20 размер"]
     }
   ];
 
