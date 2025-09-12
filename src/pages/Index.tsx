@@ -149,7 +149,7 @@ const Index = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Icon name="Smartphone" size={28} className="text-primary" />
-                <h3 className="text-xl font-bold">TechStore</h3>
+                <h3 className="text-xl font-bold px-0">RXTXshop</h3>
               </div>
               <p className="text-gray-400 mb-4">
                 Надёжный поставщик электроники и гаджетов с 2010 года
