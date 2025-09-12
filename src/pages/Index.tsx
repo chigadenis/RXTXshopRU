@@ -19,11 +19,14 @@ interface CartItem extends Product {
 }
 
 const Index = () => {
-  const [currentTab, setCurrentTab] = useState<'home' | 'cart'>('home');
+  const [currentTab, setCurrentTab] = useState<"home" | "cart">("home");
   const [cart, setCart] = useState<CartItem[]>([]);
   const [notification, setNotification] = useState<string | null>(null);
   const [showPaymentModal, setShowPaymentModal] = useState(false);
-  const [paymentResult, setPaymentResult] = useState<{ success: boolean; show: boolean }>({ success: false, show: false });
+  const [paymentResult, setPaymentResult] = useState<{
+    success: boolean;
+    show: boolean;
+  }>({ success: false, show: false });
 
   const products: Product[] = [
     {
@@ -63,38 +66,38 @@ const Index = () => {
     {
       id: 4,
       name: "Falcon Eyes FEL-3900ST тренога телескопическая",
-      price: "8.990 ₽",
+      price: "10.499 ₽",
       image:
         "https://cdn.poehali.dev/files/eca0499e-077d-48d2-be19-44fa8b65a483.png",
       specs: [
         "Минимальная высота 1350 мм",
         "Максимальная высота 4000 мм",
         "Максимальная нагрузка 12 кг",
-        "Вес без упаковки 5600 г"
+        "Вес без упаковки 5600 г",
       ],
     },
   ];
 
   const addToCart = (product: Product) => {
-    setCart(prevCart => {
-      const existingItem = prevCart.find(item => item.id === product.id);
+    setCart((prevCart) => {
+      const existingItem = prevCart.find((item) => item.id === product.id);
       if (existingItem) {
-        return prevCart.map(item =>
+        return prevCart.map((item) =>
           item.id === product.id
             ? { ...item, quantity: item.quantity + 1 }
-            : item
+            : item,
         );
       } else {
         return [...prevCart, { ...product, quantity: 1 }];
       }
     });
-    
+
     // Show notification
     setNotification(`${product.name} добавлен в корзину`);
   };
 
   const removeFromCart = (productId: number) => {
-    setCart(prevCart => prevCart.filter(item => item.id !== productId));
+    setCart((prevCart) => prevCart.filter((item) => item.id !== productId));
   };
 
   const updateQuantity = (productId: number, quantity: number) => {
@@ -102,10 +105,10 @@ const Index = () => {
       removeFromCart(productId);
       return;
     }
-    setCart(prevCart =>
-      prevCart.map(item =>
-        item.id === productId ? { ...item, quantity } : item
-      )
+    setCart((prevCart) =>
+      prevCart.map((item) =>
+        item.id === productId ? { ...item, quantity } : item,
+      ),
     );
   };
 
@@ -115,8 +118,8 @@ const Index = () => {
 
   const getTotalPrice = () => {
     return cart.reduce((total, item) => {
-      const price = parseInt(item.price.replace(/[^\d]/g, ''));
-      return total + (price * item.quantity);
+      const price = parseInt(item.price.replace(/[^\d]/g, ""));
+      return total + price * item.quantity;
     }, 0);
   };
 
@@ -130,7 +133,7 @@ const Index = () => {
     if (success) {
       // Очищаем корзину при успешной оплате
       setCart([]);
-      setCurrentTab('home');
+      setCurrentTab("home");
     }
   };
 
@@ -150,19 +153,19 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header 
+      <Header
         currentTab={currentTab}
         setCurrentTab={setCurrentTab}
         totalItems={getTotalItems()}
       />
-      
+
       <Notification message={notification} />
 
-      {currentTab === 'home' && (
+      {currentTab === "home" && (
         <HomePage products={products} addToCart={addToCart} />
       )}
 
-      {currentTab === 'cart' && (
+      {currentTab === "cart" && (
         <CartPage
           cart={cart}
           updateQuantity={updateQuantity}
