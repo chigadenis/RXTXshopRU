@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Notification from "@/components/Notification";
 import HomePage from "@/components/HomePage";
 import CartPage from "@/components/CartPage";
-import PaymentModal from "@/components/PaymentModal";
+import PaymentModal from "@/components/PaymentModalReal";
 import PaymentResult from "@/components/PaymentResult";
 
 interface Product {
