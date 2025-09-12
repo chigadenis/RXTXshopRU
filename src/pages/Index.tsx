@@ -173,7 +173,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 TechStore. Все права защищены.</p>
+            <p>© 2024 RXTXshop. Все права защищены.</p>
           </div>
         </div>
       </footer>
