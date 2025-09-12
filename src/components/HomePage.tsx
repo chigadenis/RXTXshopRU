@@ -1,7 +1,14 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
-import { Product } from "@/types";
+
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  image: string;
+  specs: string[];
+}
 
 interface HomePageProps {
   products: Product[];

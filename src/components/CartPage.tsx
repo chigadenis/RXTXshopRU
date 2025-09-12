@@ -1,7 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
-import { CartItem } from "@/types";
+
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  image: string;
+  specs: string[];
+}
+
+interface CartItem extends Product {
+  quantity: number;
+}
 
 interface CartPageProps {
   cart: CartItem[];

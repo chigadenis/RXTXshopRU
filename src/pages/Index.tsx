@@ -3,7 +3,18 @@ import Header from "@/components/Header";
 import Notification from "@/components/Notification";
 import HomePage from "@/components/HomePage";
 import CartPage from "@/components/CartPage";
-import { Product, CartItem } from "@/types";
+
+interface Product {
+  id: number;
+  name: string;
+  price: string;
+  image: string;
+  specs: string[];
+}
+
+interface CartItem extends Product {
+  quantity: number;
+}
 
 const Index = () => {
   const [currentTab, setCurrentTab] = useState<'home' | 'cart'>('home');
