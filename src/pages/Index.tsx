@@ -143,9 +143,7 @@ const Index = () => {
                 <Icon name="Smartphone" size={28} className="text-primary" />
                 <h3 className="text-xl font-bold px-0">RXTXshop</h3>
               </div>
-              <p className="text-gray-400 mb-4">
-                Надёжный поставщик электроники и гаджетов с 2010 года
-              </p>
+              <p className="text-gray-400 mb-4">Поставщик радиоэлектроники с 2012 года</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
@@ -156,7 +154,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center">
                   <Icon name="Mail" size={16} className="mr-2" />
-                  <span>info@techstore.ru</span>
+                  <span>RXTXshop@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Icon name="MapPin" size={16} className="mr-2" />
