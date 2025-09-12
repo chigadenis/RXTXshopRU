@@ -115,20 +115,13 @@ const Index = () => {
       {/* Features Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="text-center">
               <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Icon name="Truck" size={24} className="text-primary" />
               </div>
               <h3 className="text-xl font-semibold mb-2">Быстрая доставка</h3>
               <p className="text-gray-600">Доставляем по Москве в день заказа, по России — за 1-3 дня</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Shield" size={24} className="text-primary" />
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Гарантия качества</h3>
-              <p className="text-gray-600">Официальная гарантия на все товары до 2 лет</p>
             </div>
             <div className="text-center">
               <div className="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
