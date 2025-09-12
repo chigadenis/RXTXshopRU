@@ -257,9 +257,7 @@ const HomePage = ({ products, addToCart }: HomePageProps) => {
                   <Icon name="Mail" size={16} className="mr-2" />
                   <span>rxtxshop@gmail.com</span>
                 </div>
-                <div className="flex items-center">
-                  <span>Москва, ул. Тверская, 1</span>
-                </div>
+
                 <div className="mt-4 pt-3 border-t border-gray-700">
                   <span className="text-sm">ИНН: 272100036607</span>
                 </div>
