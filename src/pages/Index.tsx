@@ -3,6 +3,8 @@ import Header from "@/components/Header";
 import Notification from "@/components/Notification";
 import HomePage from "@/components/HomePage";
 import CartPage from "@/components/CartPage";
+import PaymentModal from "@/components/PaymentModal";
+import PaymentResult from "@/components/PaymentResult";
 
 interface Product {
   id: number;
@@ -20,6 +22,8 @@ const Index = () => {
   const [currentTab, setCurrentTab] = useState<'home' | 'cart'>('home');
   const [cart, setCart] = useState<CartItem[]>([]);
   const [notification, setNotification] = useState<string | null>(null);
+  const [showPaymentModal, setShowPaymentModal] = useState(false);
+  const [paymentResult, setPaymentResult] = useState<{ success: boolean; show: boolean }>({ success: false, show: false });
 
   const products: Product[] = [
     {
@@ -103,6 +107,24 @@ const Index = () => {
     }, 0);
   };
 
+  const handleCheckout = () => {
+    if (cart.length === 0) return;
+    setShowPaymentModal(true);
+  };
+
+  const handlePaymentResult = (success: boolean) => {
+    setPaymentResult({ success, show: true });
+    if (success) {
+      // Очищаем корзину при успешной оплате
+      setCart([]);
+      setCurrentTab('home');
+    }
+  };
+
+  const closePaymentResult = () => {
+    setPaymentResult({ success: false, show: false });
+  };
+
   // Hide notification after 3 seconds
   useEffect(() => {
     if (notification) {
@@ -135,6 +157,24 @@ const Index = () => {
           setCurrentTab={setCurrentTab}
           getTotalItems={getTotalItems}
           getTotalPrice={getTotalPrice}
+          onCheckout={handleCheckout}
+        />
+      )}
+
+      {/* Payment Modal */}
+      <PaymentModal
+        isOpen={showPaymentModal}
+        onClose={() => setShowPaymentModal(false)}
+        cart={cart}
+        totalPrice={getTotalPrice()}
+        onPaymentResult={handlePaymentResult}
+      />
+
+      {/* Payment Result Modal */}
+      {paymentResult.show && (
+        <PaymentResult
+          success={paymentResult.success}
+          onClose={closePaymentResult}
         />
       )}
     </div>

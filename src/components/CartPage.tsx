@@ -21,6 +21,7 @@ interface CartPageProps {
   setCurrentTab: (tab: 'home' | 'cart') => void;
   getTotalItems: () => number;
   getTotalPrice: () => number;
+  onCheckout: () => void;
 }
 
 const CartPage = ({ 
@@ -29,7 +30,8 @@ const CartPage = ({
   removeFromCart, 
   setCurrentTab, 
   getTotalItems, 
-  getTotalPrice 
+  getTotalPrice,
+  onCheckout
 }: CartPageProps) => {
   return (
     <div className="min-h-screen bg-gray-50 pt-8">
@@ -111,7 +113,7 @@ const CartPage = ({
                     {getTotalPrice().toLocaleString()} ₽
                   </span>
                 </div>
-                <Button size="lg" className="w-full">
+                <Button size="lg" className="w-full" onClick={onCheckout}>
                   <Icon name="CreditCard" size={20} className="mr-2" />
                   Оформить заказ
                 </Button>
