@@ -18,7 +18,6 @@ const Header = ({ currentTab, setCurrentTab, totalItems }: HeaderProps) => {
               alt="RXTX Logo"
               className="h-8 w-auto"
             />
-            <h1 className="text-2xl font-bold text-gray-900"> shop </h1>
           </div>
           <nav className="hidden md:flex space-x-8">
             <button
