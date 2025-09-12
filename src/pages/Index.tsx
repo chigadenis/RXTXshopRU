@@ -31,11 +31,10 @@ const Index = () => {
     },
     {
       id: 3,
-      name: "Приемник GEPRC GeminiDual 2.4GHz / 915 MHz",
+      name: "Дешифратор сигнала аналоговый",
       price: "3 990 ₽",
-      image:
-        "https://cdn.poehali.dev/files/e6213842-3846-4235-b43c-f26e62d652e1.jpg",
-      specs: ["2.4GHz / 915MHz", "ExpressLRS", "Dual Band", "20x20 размер"],
+      image: "https://cdn.poehali.dev/files/7077915b-b895-4c4a-9fdd-470f169e6a88.jpg",
+      specs: ["100.000 вариантов кода", "Стандарт видео PAL", "TTL, CVBS"],
     },
   ];
 
