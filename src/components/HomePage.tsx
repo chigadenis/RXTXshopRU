@@ -196,10 +196,7 @@ const HomePage = ({ products, addToCart }: HomePageProps) => {
                       </div>
                     ))}
                   </div>
-                  <Button 
-                    onClick={() => addToCart(product)}
-                    className="w-full"
-                  >
+                  <Button onClick={() => addToCart(product)} className="w-full">
                     <Icon name="ShoppingCart" size={16} className="mr-2" />
                     Добавить в корзину
                   </Button>
@@ -258,11 +255,10 @@ const HomePage = ({ products, addToCart }: HomePageProps) => {
                 </div>
                 <div className="flex items-center">
                   <Icon name="Mail" size={16} className="mr-2" />
-                  <span>RXTXshop@gmail.com</span>
+                  <span>rxtxshop@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Icon name="MapPin" size={16} className="mr-2" />
-                  <span>Москва, ул. Тверская, 1</span>
                 </div>
                 <div className="mt-4 pt-3 border-t border-gray-700">
                   <span className="text-sm">ИНН: 272100036607</span>
