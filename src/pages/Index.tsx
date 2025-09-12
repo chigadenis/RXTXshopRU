@@ -13,10 +13,10 @@ const Index = () => {
     },
     {
       id: 2, 
-      name: "Gaming Laptop ROG",
-      price: "159 990 ₽",
+      name: "Усилитель 25 Ватт 130-170 МГц",
+      price: "12 990 ₽",
       image: "/img/6e93eaf3-1cbd-4eaa-98d9-113884c4acce.jpg",
-      specs: ["15.6\" 144Hz", "RTX 4070", "32 ГБ RAM", "1 ТБ SSD"]
+      specs: ["25W мощность", "130-170 МГц", "Активное охлаждение", "SMA разъёмы"]
     },
     {
       id: 3,
