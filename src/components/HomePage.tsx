@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import UserAgreement from "@/components/UserAgreement";
 
 interface Product {
   id: number;
@@ -280,6 +281,9 @@ const HomePage = ({ products, addToCart }: HomePageProps) => {
           </div>
         </div>
       </footer>
+
+      {/* User Agreement */}
+      <UserAgreement />
     </>
   );
 };
