@@ -252,7 +252,7 @@ const HomePage = ({ products, addToCart }: HomePageProps) => {
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-center">
                   <Icon name="Phone" size={16} className="mr-2" />
-                  <span>+7 (960) 491-24-37</span>
+                  <span>+7 958 651 98 03</span>
                 </div>
                 <div className="flex items-center">
                   <Icon name="Mail" size={16} className="mr-2" />
