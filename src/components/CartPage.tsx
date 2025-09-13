@@ -122,6 +122,38 @@ const CartPage = ({
           </div>
         )}
       </div>
+
+      {/* Contact Information Footer */}
+      <div className="mt-16 bg-primary text-white py-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Контактная информация</h3>
+              <div className="space-y-3">
+                <div className="flex items-center">
+                  <Icon name="Phone" size={16} className="mr-3" />
+                  <span>+7 958 651 98 03</span>
+                </div>
+                <div className="flex items-center">
+                  <Icon name="Mail" size={16} className="mr-3" />
+                  <span>rxtxshop@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Реквизиты</h3>
+              <div className="space-y-3">
+                <div>
+                  <span className="text-sm opacity-90">ИП Чигирёв Д.А.</span>
+                </div>
+                <div>
+                  <span className="text-sm opacity-90">ИНН: 272100036607</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
