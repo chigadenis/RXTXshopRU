@@ -144,9 +144,6 @@ const CartPage = ({
               <h3 className="text-lg font-semibold mb-4">Реквизиты</h3>
               <div className="space-y-3">
                 <div>
-                  <span className="text-sm opacity-90">ИП Чигирёв Д.А.</span>
-                </div>
-                <div>
                   <span className="text-sm opacity-90">ИНН: 272100036607</span>
                 </div>
               </div>
