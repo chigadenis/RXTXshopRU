@@ -121,10 +121,10 @@ const UserAgreement = () => {
 
   return (
     <>
-      <div className="text-center py-8 border-t border-gray-200 bg-gray-50">
+      <div className="text-center py-8 border-t border-gray-200 bg-primary">
         <button
           onClick={() => setIsModalOpen(true)}
-          className="text-sm text-gray-600 hover:text-gray-800 underline transition-colors"
+          className="text-sm text-white hover:text-gray-200 underline transition-colors"
         >
           Пользовательское соглашение
         </button>
