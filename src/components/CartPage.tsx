@@ -105,6 +105,21 @@ const CartPage = ({
               </Card>
             ))}
             
+            {/* Delivery Information */}
+            <Card className="bg-blue-50 border-blue-200">
+              <CardContent className="p-6">
+                <div className="flex items-start space-x-3">
+                  <Icon name="Truck" size={20} className="text-blue-600 mt-1" />
+                  <div>
+                    <h3 className="font-semibold text-blue-900 mb-2">Способ получения товара:</h3>
+                    <p className="text-blue-800">
+                      Отправляем по почте, <span className="font-medium">ОБЯЗАТЕЛЬНО указывайте ФИО и адрес при оплате.</span>
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
             <Card className="bg-white border-primary">
               <CardContent className="p-6">
                 <div className="flex justify-between items-center mb-4">
