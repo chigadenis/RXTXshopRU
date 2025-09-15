@@ -244,7 +244,7 @@ const HomePage = ({ products, addToCart }: HomePageProps) => {
                 <h3 className="text-xl font-bold px-0">RXTXshop</h3>
               </div>
               <p className="text-gray-400 mb-4">
-                Поставщик радиоэлектроники с 2012 года
+                Качественная радиоэлектроника
               </p>
             </div>
             <div>
