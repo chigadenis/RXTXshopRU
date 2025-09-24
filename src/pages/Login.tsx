@@ -55,7 +55,7 @@ const Login = () => {
           description: `Добро пожаловать, ${data.user.username}!`,
         });
         
-        navigate("/profile");
+        navigate("/");
       } else {
         setError(data.error || "Ошибка входа");
       }

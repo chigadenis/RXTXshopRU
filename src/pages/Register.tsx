@@ -65,7 +65,7 @@ const Register = () => {
       if (response.ok && data.success) {
         toast({
           title: "Успешная регистрация!",
-          description: "Ваш аккаунт создан. Теперь вы можете войти.",
+          description: "Ваш аккаунт создан. Теперь войдите в систему.",
         });
         navigate("/login");
       } else {
