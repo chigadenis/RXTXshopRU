@@ -37,6 +37,28 @@ export const usePayment = (): UsePaymentReturn => {
         throw new Error(response.error || 'Ошибка создания платежа');
       }
 
+      // Отправляем email уведомление о заказе
+      try {
+        await fetch("https://functions.poehali.dev/8cf4ae1d-a65c-4ac4-a729-fe81eb9cd885", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            customer_email: request.customerInfo.email,
+            customer_phone: request.customerInfo.phone,
+            customer_name: request.customerInfo.name || "",
+            order_amount: request.amount,
+            order_id: response.paymentId || `ORDER-${Date.now()}`,
+            items: request.items || [],
+            payment_method: request.paymentMethod || ""
+          }),
+        });
+      } catch (emailError) {
+        console.warn('Email notification failed:', emailError);
+        // Не прерываем процесс платежа если email не отправился
+      }
+
       return response;
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Неизвестная ошибка';

@@ -1,0 +1,45 @@
+{
+  "tests": [
+    {
+      "name": "Test email notification sending",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "customer_email": "test@example.com",
+        "customer_phone": "+7 999 123 45 67",
+        "customer_name": "Тест Покупатель",
+        "order_amount": 2500.00,
+        "order_id": "ORD-123456",
+        "items": [
+          {
+            "name": "Тестовый товар",
+            "quantity": 2,
+            "price": 1250
+          }
+        ],
+        "payment_method": "Банковская карта"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": "boolean",
+        "message": "string"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Test validation error",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "customer_email": "invalid-email",
+        "customer_phone": "123",
+        "order_amount": -100
+      },
+      "expectedStatus": 400,
+      "expectedBody": {
+        "error": "string"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
