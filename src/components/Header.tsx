@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/ui/icon";
+import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 interface HeaderProps {
   currentTab: "home" | "cart";
@@ -8,6 +10,14 @@ interface HeaderProps {
 }
 
 const Header = ({ currentTab, setCurrentTab, totalItems }: HeaderProps) => {
+  const [user, setUser] = useState<{username: string} | null>(null);
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem("user");
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
   return (
     <header className="bg-white border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,6 +68,21 @@ const Header = ({ currentTab, setCurrentTab, totalItems }: HeaderProps) => {
                 </span>
               )}
             </Button>
+            {user ? (
+              <Link to="/profile">
+                <Button variant="outline" size="sm">
+                  <Icon name="User" size={16} />
+                  <span className="ml-1 hidden sm:inline">{user.username}</span>
+                </Button>
+              </Link>
+            ) : (
+              <Link to="/login">
+                <Button variant="outline" size="sm">
+                  <Icon name="LogIn" size={16} />
+                  <span className="ml-1 hidden sm:inline">Войти</span>
+                </Button>
+              </Link>
+            )}
           </div>
         </div>
       </div>

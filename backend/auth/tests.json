@@ -1,0 +1,48 @@
+{
+  "tests": [
+    {
+      "name": "Test user registration",
+      "method": "POST",
+      "body": {
+        "username": "testuser",
+        "password": "password123",
+        "action": "register"
+      },
+      "expectedStatus": 201,
+      "expectedBody": {
+        "success": true,
+        "message": "string",
+        "user_id": "number"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Test user login",
+      "method": "POST",
+      "body": {
+        "username": "testuser",
+        "password": "password123",
+        "action": "login"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": true,
+        "session_token": "string",
+        "user": {
+          "id": "number",
+          "username": "string"
+        }
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Test profile without token",
+      "method": "GET",
+      "expectedStatus": 401,
+      "expectedBody": {
+        "error": "Session token required"
+      },
+      "bodyMatcher": "partial"
+    }
+  ]
+}
